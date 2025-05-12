@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Nondescript</title>
+  <meta name="description" content="Sanctuary Nondescript">
+
+  <!-- HTML Meta Tags -->
+  <title>Sanctuary Nondescript</title>
+  <meta name="description" content="nondescript">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://nondescript-sanctuary.xyz">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="sanctuary nondescript">
+  <meta property="og:description" content="nondescript">
+  <meta property="og:image" content="">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="nondescript-sanctuary.xyz">
+  <meta property="twitter:url" content="https://nondescript-sanctuary.xyz">
+  <meta name="twitter:title" content="sanctuary nondescript">
+  <meta name="twitter:description" content="nondescript">
+  <meta name="twitter:image" content="">
+
+  <link rel="stylesheet" href="index.css">
+
+  <script type="module">
+    document.getElementById("sidebar-toggle")?.addEventListener("click", () => {
+      document.querySelector("aside")?.classList.toggle("hidden")
+    });
+
+    function n() {
+      const e = document.getElementById("disclaimer-banner");
+      e.style.display = "none";
+      localStorage.setItem("disclaimerDismissed", "true");
+    }
+
+    window.dismissBanner = n;
+    localStorage.getItem("disclaimerDismissed") === "true" && (document.getElementById("disclaimer-banner").style.display = "none");
+  </script>
+</head>
+
+<body class="bg-main min-h-screen p-2 md:p-5 bg-[url('/img/geobg.jpg')] bg-repeat bg-center">
+  <div class="max-w-4xl mx-auto bg-opacity-85 bg-main border-3 md:p-5 shadow-cyber">
+
+    <!-- Header -->
+    <header class="text-center bg-gradient-top p-5 mb-5 border-2 border-top">
+      <button id="sidebar-toggle" class="md:hidden absolute text-2xl left-4 top-4 text-bottom-icon border-2 bg-nav w-12 h-16 border-dark-uk p-2 hover:border-yellow hover:text-white">
+        ☰
+      </button>
+      <a href="/" class="block">
+        <h1 class="text-4xl font-comic animate-[rainbow_3s_infinite] m-0">Nondescript</h1>
+      </a>
+    </header>
+
+    <!-- New Banner -->
+    <div id="disclaimer-banner" class="max-w-4xl mx-auto mb-4 bg-banner border-3 border-cyber-yellow p-3 flex justify-between items-center">
+      <p class="text-banner font-mono text-sm">NOTHING HERE IS FINANCIAL ADVICE</p>
+      <button onclick="dismissBanner()" class="text-cyber-yellow hover:text-bottom-icon font-bold px-2"> ✕</button>
+    </div>
+
+    <div class="w-full bg-cyber- text-white text-center py-4 text-xl font-bold">
+      Welcome to Sanctuary Nondescript
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:block w-full bg-nav border-b-2 border-internal z-50">
+      <div class="max-w-5xl mx-auto p-4">
+        <div class="flex flex-wrap justify-center gap-6 sm:gap-6 md:gap-10 bg-gradient-nav px-4 py-3 text-white font-bold rounded text-base sm:text-lg md:text-xl">
+          <a href="/home.html" class="hover:hover-yellow hover:text-white transform hover:scale-105 transition-all duration-300">🛖 <span class="underline">HOME</span></a>
+          <a href="/docs/origin.html" class="hover:hover-yellow hover:text-white transform hover:scale-105 transition-all duration-300">✴️ <span class="underline">ORIGIN</span></a>
+          <a href="/docs/goals.html" class="hover:hover-yellow hover:text-white transform hover:scale-105 transition-all duration-300">🛞 <span class="underline">GOALS</span></a>
+          <a href="/docs/writings.html" class="hover:hover-yellow hover:text-white transform hover:scale-105 transition-all duration-300">📜 <span class="underline">WRITINGS</span></a>
+          <a href="/docs/recs.html" class="hover:hover-yellow hover:text-white transform hover:scale-105 transition-all duration-300">📚 <span class="underline">REC LIST</span></a>
+          <a href="/docs/contact.html" class="hover:hover-yellow hover:text-white transform hover:scale-105 transition-all duration-300">✉️ <span class="underline">CONTACT</span></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <aside class="hidden md:hidden bg-nav text-white p-6 border-t-2 border-internal bg-gradient-nav">
+      <nav class="flex flex-col gap-6 text-lg">
+        <a href="/home.html" class="hover:hover-yellow hover:text-white">🛖 HOME</a>
+        <a href="/docs/origin.html" class="hover:hover-yellow hover:text-white">✴️ ORIGIN</a>
+        <a href="/docs/goals.html" class="hover:hover-yellow hover:text-white">🛞 GOALS</a>
+        <a href="/docs/writings.html" class="hover:hover-yellow hover:text-white">📜 WRITINGS</a>
+        <a href="/docs/recs.html" class="hover:hover-yellow hover:text-white">📚 REC LIST</a>
+        <a href="/docs/contact.html" class="hover:hover-yellow hover:text-white">✉️ CONTACT</a>
+      </nav>
+    </aside>
+
+    <main class="flex-1 min-w-0 bg-nav/50 border border-internal p-5 prose prose-match">
+
+      <h2 id="toc">Table of Contents
+        <a aria-hidden="true" tabindex="-1" href="#toc"><span class="icon icon-link"></span></a>
+      </h2>
+
+      <ul>
+        <li><a href="#recommended-readings">Recommended Readings</a>
+          <ul>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#papers">Papers</a></li>
+            <li><a href="#books">Books</a></li>
+          </ul>
+        </li>
+        <li><a href="#recommended-watchings">Recommended watchings</a></li>
+        <li><a href="#related-works">Related Works</a></li>
+      </ul>
+
+      <h2 id="recommended-readings">Recommended Readings
+        <a aria-hidden="true" tabindex="-1" href="#recommended-readings"><span class="icon icon-link"></span></a>
+      </h2>
+
+      <h3 id="posts">Posts
+        <a aria-hidden="true" tabindex="-1" href="#posts"><span class="icon icon-link"></span></a>
+      </h3>
+
+      <h3 id="papers">Papers
+        <a aria-hidden="true" tabindex="-1" href="#papers"><span class="icon icon-link"></span></a>
+      </h3>
+      <ul>
+        <li><a href="/docs/gnosis-paper">EX</a></li>
+      </ul>
+
+      <h3 id="books">Books
+        <a aria-hidden="true" tabindex="-1" href="#books"><span class="icon icon-link"></span></a>
+      </h3>
+      <ol>
+        <li>EX1 &#x3C;&#x3C; <a href="https://en.wikipedia.org/wiki/">wiki</a> <a href="https://www.goodreads.com/book/show/">goodreads</a> >></li>
+      </ol>
+      <ul>
+        <li>Why it matters</li>
+      </ul>
+
+      <ol start="2">
+        <li>Ex2 &#x3C;&#x3C; <a href="https://www.goodreads.com/book/show/">goodreads</a> <a href="https://waitbutwhy.com/2023/02/wop-contents.html">site</a> >></li>
+      </ol>
+      <ul>
+        <li>Wait but why?</li>
+      </ul>
+
+   
+
+      <h2 id="recommended-watchings">Recommended watchings
+        <a aria-hidden="true" tabindex="-1" href="#recommended-watchings"><span class="icon icon-link"></span></a>
+      </h2>
+      <ol>
+        <li>Ex &#x3C;&#x3C; <a href="https://en.wikipedia.org/wiki/">wiki</a> <a href="https://www.imdb.com/title/tt11680642/">imdb</a> >></li>
+      </ol>
+      <div class="text-menu font-mono mb-4">GG</div>
+    </main>
+
+    
+
+    <!-- Footer Elements -->
+    <div class="text-center text-bottom-icon text-xl my-5"> ° ♦ ◇ ° ◆ ° ◇ ♦ °</div>
+  </div>
+
+</body>
+
+</html>
