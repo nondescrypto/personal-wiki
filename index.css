@@ -1057,7 +1057,7 @@ tfoot td:last-child):not(:where([class~=not-prose],
 }
 .bg-banner {
   --tw-bg-opacity: 1;
-  background-color:rgb(234 179 8 / var(--tw-bg-opacity))
+  background-color:rgb(185 117 109 / var(--tw-bg-opacity))
 }
 .bg-opacity-85 {
   --tw-bg-opacity: .85
