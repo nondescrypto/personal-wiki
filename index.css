@@ -1238,4 +1238,10 @@ html {
   .md\:p-5 {
     padding:1.25rem
   }
+
+  .img-fade-top-bottom {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 50%, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 50%, black 50%, transparent 100%);
+  mask-mode: match-source;
+}
 }
