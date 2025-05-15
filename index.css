@@ -1145,7 +1145,7 @@ tfoot td:last-child):not(:where([class~=not-prose],
 }
 .text-bottom-icon {
   --tw-text-opacity: 1;
-  color:rgb(180 156 70 / var(--tw-text-opacity))
+  color:rgb(156 58 47 / var(--tw-text-opacity))
 }
 .text-white {
   --tw-text-opacity: 1;
